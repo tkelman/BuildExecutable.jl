@@ -221,7 +221,7 @@ function emit_cmain(cfile, exename, relocation)
     end
     sysji = escape_string(sysji)
     if VERSION > v"0.5.0-dev+4397" 
-        arr = "jl_alloc_array_ptr_1d"
+        arr = "jl_alloc_vec_any"
         str = "jl_string_type"
     else
         arr = "jl_alloc_cell_1d"
